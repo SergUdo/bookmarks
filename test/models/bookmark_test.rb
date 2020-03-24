@@ -1,7 +1,10 @@
 require 'test_helper'
 
 class BookmarkTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+
+  test "should save bookmark" do
+    bookmark = Bookmark.new
+    assert_nil(bookmark.id, nil)
+    assert bookmark.save
+  end
 end

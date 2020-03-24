@@ -8,11 +8,14 @@ class BookmarksControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
     get bookmarks_url
     assert_response :success
+    assert_template :index
+    assert_template layout: "layouts/application"
   end
 
   test "should get new" do
     get new_bookmark_url
     assert_response :success
+    assert_template layout: "layouts/application", partial: "_form"
   end
 
   test "should create bookmark" do
