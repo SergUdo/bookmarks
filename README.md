@@ -1,25 +1,20 @@
-# README
+# Application Bookmarks
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails 5 application example for the VPS deploy lesson
 
-Things you may want to cover:
+Ruby version-`2.5.7`
 
-* Ruby version
+Rails version-`5.0.1`
 
-* System dependencies
+Puma-`3.12.4`
 
-* Configuration
+Run command-`git clone`
 
-* Database creation
+Go to the folder-`cd bookmarks`
 
-* Database initialization
+Run command-`bundle&&rails db:create&&rails db:migrate`
 
-* How to run the test suite
+Start the server-`rails s`
 
-* Services (job queues, cache servers, search engines, etc.)
+Vizit to- `0.0.0.0:3000`
 
-* Deployment instructions
-
-* ...
-# bookmarks
